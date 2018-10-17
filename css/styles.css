@@ -2,6 +2,8 @@ html {
 -webkit-overflow-scrolling: touch;
 }
 
+
+
 body {
   position: relative;
   overflow-y: auto;
@@ -119,7 +121,7 @@ width: 150px;
 
 
 
-.container {
+.project {
   position: relative;
   width: 50%;
 }
@@ -140,14 +142,17 @@ width: 150px;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #f95959;
 }
 
-.container:hover .overlay {
+.project:hover .overlay {
+  opacity: 0.5;
+}
+.project:hover .textlink {
   opacity: 1;
 }
 
-.text {
+.textlink {
   color: white;
   font-size: 20px;
   position: absolute;
@@ -157,4 +162,5 @@ width: 150px;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  opacity: 0;
 }
