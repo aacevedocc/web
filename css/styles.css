@@ -5,7 +5,7 @@ html {
 body {
   position: relative;
   overflow-y: auto;
-  background: #ffffff;
+  background: #bababa;
   scroll-snap-type: y mandatory;
 }
 
@@ -14,24 +14,25 @@ body {
 }
 
 #section1, #section2, #section3 {
-    height: 90vh;
+    height: 76vh;
     padding: 50px;
     background-clip: padding-box;
-
+    -webkit-box-shadow: 24px 24px 63px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 24px 24px 63px 0px rgba(0,0,0,0.3);
+    box-shadow: 24px 24px 63px 0px rgba(0,0,0,0.3);
 }
 
 .container-fluid {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  padding-left: 5vh;
-  padding-right: 5vh;
-  background: #ffffff;
+  padding-top: 12vh;
+  padding-bottom: 12vh;
+  padding-left: 12vh;
+  padding-right: 12vh;
   scroll-snap-align: start;
 }
 
 .navbar-nav {
-margin-right: 5vh;
-margin-bottom: 6vh;
+margin-right: 15vh;
+margin-bottom: 13vh;
 }
 
 #section1 {
@@ -50,7 +51,21 @@ color: #ffffff !important;
 }
 
 @media screen and (max-width: 992px) {
-  h3 {
-    font-size: 15px;
-  }
+  .container-fluid {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+#section1, #section2, #section3 {
+    height: 90vh;
+}
+.navbar-nav {
+margin-right: 5vh;
+margin-bottom: 6vh;
+}
+}
+
+h3 {
+  font-size: 3.5vw;
 }
