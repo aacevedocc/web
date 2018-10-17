@@ -13,6 +13,15 @@ body {
     display: none;
 }
 
+#header {
+    position: fixed;
+    padding-top: 12.5vh;
+    padding-left: 12vh;
+    height: 20%;
+    width: 20%;
+}
+
+
 #section1, #section2, #section3 {
     height: 76vh;
     padding: 20px;
@@ -30,10 +39,6 @@ body {
   scroll-snap-align: start;
 }
 
-.navbar-nav {
-margin-right: 15vh;
-margin-bottom: 13vh;
-}
 
 #section1 {
   background-color: #455d77;
@@ -45,10 +50,6 @@ margin-bottom: 13vh;
   background-color: #facf5a;
 }
 
-.nav-item {
-font-size: ;
-color: #ffffff !important;
-}
 
 h3 {
   font-size: 3.5vw;
@@ -65,10 +66,27 @@ p {
   color: #ffffff;
   text-align: center;
 }
-#text {
+#textarea {
+  padding-top: 10vh;
   width: 60vw;
 margin: 0 auto;
 }
+
+/* navbar */
+a:visited{
+   color: #ffffff !important;
+}
+
+.nav-item {
+font-size: ;
+color: #ffffff !important;
+}
+
+.navbar-nav {
+margin-right: 15vh;
+margin-bottom: 13vh;
+}
+
 
 /* size on resize */
 @media screen and (max-width: 992px) {
@@ -85,4 +103,58 @@ margin: 0 auto;
 margin-right: 5vh;
 margin-bottom: 6vh;
 }
+#header {
+    position: fixed;
+    padding-top: 5vh;
+    padding-left: 4.5vh;
+}
+img {
+height: 30px;
+width: 150px;
+}
+}
+
+
+
+
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }

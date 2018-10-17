@@ -22,10 +22,19 @@
   </head>
   <body>
 
+    <div id="header">
+        <nav class="navbar navbar-expand">
+              <a class="navbar-brand" href="index.html"><img src="./imgs/test.png" width="252" height="40" alt="home">
+              </a>
+            </nav>
+            </div>
+
+
+
 <!-- sections -->
-<div  id="title" class="container-fluid" "display: flex">
+<div id="title" class="container-fluid">
     <div id="section1" data-spy="scroll" data-target="#navbar" data-offset="0">
-<div id="text">
+<div id="textarea">
       <h3>Hi, I'm Álvaro!</h3>
     <h1 id="description">I'm a UX Designer based in Barcelona.</h1>
     <p  id="text">Some of my skills include user research, synthesizing research into insights and ideas, UX/UI design, interaction design, prototyping and user testing.<br><br>Oh, and I used to be a product and portrait Photographer.</p>
@@ -33,19 +42,39 @@
     </div>
     </div>
 
-    <div  id="work" class="container-fluid">
+    <div id="work" class="container-fluid">
         <div id="section2" data-spy="scroll" data-target="#navbar" data-offset="0">
-          <h3>Hi, I'm Álvaro!</h3>
-          <h1 id="description">I'm a UX Designer based in Barcelona.</h1>
-          <p  id="text">Some of my skills include user research, synthesizing research into insights and ideas, UX/UI design, interaction design, prototyping and user testing.<br><br>Oh, and I used to be a product and portrait Photographer.</p>
+          <div id="textarea">
+                <h3>Hi, I'm Álvaro!</h3>
+              <h1 id="description">I'm a UX Designer based in Barcelona.</h1>
+              <p  id="text">Some of my skills include user research, synthesizing research into insights and ideas, UX/UI design, interaction design, prototyping and user testing.<br><br>Oh, and I used to be a product and portrait Photographer.</p>
+
+              <div class="container">
+                <img src="./imgs/test.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">Hello World</div>
+                </div>
+              </div>
+
+              <div class="container">
+                <img src="./imgs/test.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">Hello World</div>
+                </div>
+              </div>
+
+          </div>
           </div>
           </div>
 
-        <div  id="contact" class="container-fluid">
+        <div id="contact" class="container-fluid">
             <div id="section3" data-spy="scroll" data-target="#navbar" data-offset="0">
-              <h3>Hi, I'm Álvaro!</h3>
-              <h1 id="description">I'm a UX Designer based in Barcelona.</h1>
-              <p  id="text">Some of my skills include user research, synthesizing research into insights and ideas, UX/UI design, interaction design, prototyping and user testing.<br><br>Oh, and I used to be a product and portrait Photographer.</p>
+              <div id="textarea">
+                    <h3>Hi, I'm Álvaro!</h3>
+                  <h1 id="description">I'm a UX Designer based in Barcelona.</h1>
+                  <p  id="text">Some of my skills include user research, synthesizing research into insights and ideas, UX/UI design, interaction design, prototyping and user testing.<br><br>Oh, and I used to be a product and portrait Photographer.</p>
+              <a id="link" href="#title">backtotop</a>
+              </div>
               </div>
               </div>
   </body>
@@ -81,7 +110,7 @@
 </script>
 
 <script>
-$('body').scrollspy({ target: '#navbar' })
+$('body ').scrollspy({ target: '#navbar' })
 </script>
 
     <script>
