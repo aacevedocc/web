@@ -12,6 +12,8 @@ body {
     display: none;
 }
 
+/* fonts */
+
 /* logo and cards */
 #header {
     position: fixed;
@@ -54,23 +56,29 @@ body {
 
 /* text */
 h3 {
+    font-family: 'Helvetica Neue';
+    font-weight: 800;
     font-size: 3.5vw;
     color: #ffffff;
     text-align: center;
 }
-h1 {
+h2 {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
     font-size: 2vw;
     color: #ffffff;
     text-align: center;
 }
-p {
-    font-size: 1vw;
+h1 {
+    font-family: 'Courier New';
+    font-weight: 200;
+    font-size: 1.4vw;
     color: #ffffff;
     text-align: center;
 }
 #textarea {
     padding-top: 10vh;
-    width: 60vw;
+    width: 45vw;
     margin: 0 auto;
 }
 
@@ -79,7 +87,8 @@ a:visited{
     color: #ffffff !important;
 }
 .nav-item {
-    font-size: ;
+    font-family: 'Helvetica Neue';
+    font-weight: 800;
     color: #ffffff !important;
 }
 .navbar-nav {
